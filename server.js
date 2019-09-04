@@ -7,7 +7,12 @@ app.use(cors())
 
 app.use(express.static('public'))
 
-app.use('*', (req, res) => {
+app.all('/404', (req, res) => {
+  res.status(404)
+  res.send('404')
+})
+
+app.all('*', (req, res) => {
   res.redirect('/404')
 })
 
