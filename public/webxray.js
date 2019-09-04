@@ -186,7 +186,7 @@ var JSON = {
 };
 
 var defaultLang = "en-US",
-	defaultURI = "https://goggles.mozilla.org" + "/" + defaultLang;
+	defaultURI = "https://x-ray-goggles.glitch.me" + "/" + defaultLang;
 
 var webxrayScript = document.querySelector(".webxray"),
 	baseURI = baseURI = webxrayScript.getAttribute("data-baseuri") || defaultURI,
@@ -10046,9 +10046,9 @@ var Webxray = (function() {
     baseURI: "",
     cssURL: "webxray.css",
     preferencesURL: "preferences.html",
-    easyRemixDialogURL: "https://goggles.mozilla.org/" + xray.lang + "/easy-remix-dialog/index.html",
-    uprootDialogURL: "https://goggles.mozilla.org/" + xray.lang + "/uproot-dialog.html",
-    helpDialogURL: "https://goggles.mozilla.org/" + xray.lang + "/help.html",
+    easyRemixDialogURL: "https://x-ray-goggles.glitch.me/" + xray.lang + "/easy-remix-dialog/index.html",
+    uprootDialogURL: "https://x-ray-goggles.glitch.me/" + xray.lang + "/uproot-dialog.html",
+    helpDialogURL: "https://x-ray-goggles.glitch.me/" + xray.lang + "/help.html",
     hackpubInjectionURL: "published-hack/injector.js",
     pluginURLs: [],
     hackpubURL: "",

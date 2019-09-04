@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://goggles.mozilla.org/bower/makerstrap/dist/makerstrap.min.css">
+
+    <link rel="stylesheet" href="https://goggles.mozilla.org/stylesheets/style.css">
+    <link rel="stylesheet" href="https://goggles.mozilla.org/stylesheets/dialog.css">
+    <link rel="stylesheet" href="https://goggles.mozilla.org/stylesheets/hierarchic-source-code.css">
+    <link rel="stylesheet" id="webxray" href="https://goggles.mozilla.org/webxray.css">
+    <link rel="stylesheet" href="https://goggles.mozilla.org/tipsy.css">
+    <link rel="stylesheet" href="https://goggles.mozilla.org/codemirror2/lib/codemirror.css">
+    <link rel="stylesheet" href="https://goggles.mozilla.org/stylesheets/jsbin-codemirror-theme.css">
+    <link rel="stylesheet" href="https://goggles.mozilla.org/stylesheets/easy-dialog-remix.css">
+
+    <title>Remix Dialog</title>
+    <script src="https://goggles.mozilla.org/jquery.min.js"></script>
+    <script src="https://goggles.mozilla.org/jquery.tipsy.js"></script>
+    <script src="https://goggles.mozilla.org/jquery.scrollTo-min.js"></script>
+    <script src="https://goggles.mozilla.org/codemirror2/lib/codemirror.js"></script>
+    <script src="https://goggles.mozilla.org/codemirror2/mode/xml/xml.js"></script>
+    <script src="https://goggles.mozilla.org/codemirror2/mode/javascript/javascript.js"></script>
+    <script src="https://goggles.mozilla.org/codemirror2/mode/css/css.js"></script>
+    <script src="https://goggles.mozilla.org/codemirror2/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="https://goggles.mozilla.org/easy-remix-dialog/render-dom.js"></script>
+    <script src="https://goggles.mozilla.org/easy-remix-dialog/edit-dom.js"></script>
+    <script src="https://goggles.mozilla.org/easy-remix-dialog/html-editor.js"></script>
+    <script src="https://goggles.mozilla.org/src/utils.js"></script>
+    <script src="https://goggles.mozilla.org/src/tag-colors.js"></script>
+    <script src="https://goggles.mozilla.org/src/event-emitter.js"></script>
+    <script src="https://goggles.mozilla.org/bower/webmaker-i18n/localized.js"></script>
+
+    <style>
+      iframe {
+        display: none;
+      }
+      div button {
+        display: block;
+        margin: 1rem;
+        width: 9rem;
+      }
+      div button tab {
+        border: none;
+        background: inherit;
+        color: white;
+      }
+      div button tab hidden {
+        display: none;
+      }
+      body {
+        background: inherit;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="dialog">
+
+      <div id="dom-rendering-column" class="pane split">
+        <div id="dom-rendering"></div>
+      </div>
+
+      <iframe id="preview" scrolling="no" src="blank.html"></iframe>
+
+      <div>
+        <button class="btn btn-primary" id="ok">Update</button>
+        <button class="btn btn-default" id="nevermind">Cancel</button>
+
+        <button class="tab hidden" id="pretty">Basic</button>
+        <button class="tab selected hidden" id="raw">Advanced</button>
+      </div>
+
+    </div>
+
+    <script src="https://goggles.mozilla.org/easy-remix-dialog.js"></script>
+  </body>
+</html>
+
