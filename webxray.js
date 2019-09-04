@@ -12330,7 +12330,7 @@ var Webxray = (function() {
       });
 
       self.addSimpleKeyBindings([
-        {
+        /*{
           key: 'P',
           cmd: 'uproot',
           alwaysInToolbar: true,
@@ -12338,7 +12338,7 @@ var Webxray = (function() {
             persistence.saveHistoryToDOM();
             jQuery.openUprootDialog(self);
           }
-        },
+        },*/
         {
           key: 'ESC',
           cmd: 'quit',
@@ -12359,14 +12359,14 @@ var Webxray = (function() {
           alwaysInToolbar: true,
           execute: function() { mixMaster.redo(); }
         },
-        {
+        /*{
           key: 'H',
           cmd: 'help',
           alwaysInToolbar: true,
           execute: function() {
             self.showKeyboardHelp();
           }
-        },
+        },*/
         {
           key: 'R',
           cmd: 'remix',
