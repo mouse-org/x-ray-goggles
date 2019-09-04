@@ -1,0 +1,18 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+.goggles-bookmark {
+  border: 2px solid black;
+  background-color: yellow;
+  border-radius: 5px;
+  padding: 5px;
+}
