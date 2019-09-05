@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-var cors = require('cors')
+const cors = require('cors')
 const path = require('path')
 
 app.use(cors())
@@ -8,11 +8,14 @@ app.use(cors())
 app.use(express.static('public'))
 
 app.all('/404', (req, res) => {
+  console.log(req.originalUrl)
+  //console.log('\n * * * * * * * \n')
   res.status(404)
   res.send('404')
 })
 
 app.all('*', (req, res) => {
+  console.log(req.originalUrl)
   res.redirect('/404')
 })
 
