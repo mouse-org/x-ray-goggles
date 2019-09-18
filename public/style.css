@@ -1,13 +1,97 @@
 /* CSS files add styling rules to your content */
 
 body {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
+  font-family: arial, sans-serif;
+  margin: 0;
 }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
+ol, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  height: 90px;
+  background-color: #4b51aa;
+}
+
+#header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#header-logo {
+  height: 70px;
+  display: inline-block;
+  margin: 10px;
+}
+
+#header img {
+  display: none;
+  /* Change when we have logo */
+}
+
+#header h1 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 25px;
+  color: white;
+}
+
+#content, #footer, .divider {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+#content img {
+  max-width: 400px;
+}
+
+#steps {
+  list-style: none;
+  counter-reset: step-counter;
+}
+
+#steps > li {
+  counter-increment: step-counter;
+}
+
+#steps > li::before {
+  content: counter(step-counter) ". ";
+  font-size: 150%;
+  font-weight: bold;
+  position: relative;
+  top: 42px;
+  left: -40px;
+}
+
+#steps > li {
+  margin: .5em 1em;
+  padding: 1em 0 1em 5em;
+  background-color: #f2f3ff;
+  border-radius: 3px;
+}
+
+#browser-os-switcher {
+  margin: 10px 20px;
+}
+
+#browser-os-switcher > li {
+  margin: 0;
+  padding: 0;
+}
+
+#browser-os-switcher > li > ul {
+  display: inline-block;
+}
+
+#browser-os-switcher > li > ul > li {
+  display: inline-block;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #444;
+  margin: 0;
+  padding: 2px 10px;
 }
 
 .goggles-bookmark {
@@ -19,7 +103,7 @@ h1 {
   border-radius: 5px;
   box-shadow: 0 2px 0 #e04164;
   font-size: 18px;
-  font-family: "Fira Sans";
+  font-family: "Ariel", sans-serif;
   color: #fff;
   text-align: center;
   text-decoration: none;

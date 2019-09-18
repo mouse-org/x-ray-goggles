@@ -8,56 +8,123 @@
     
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="" />
   </head>  
   <body>
-    <h1>X-Ray Goggles</h1>
-    <img
-      src="https://cdn.glitch.com/4be08ec8-dd6f-4a0e-88a4-0bcf147aa4e8%2Fgoggles-logo.png?v=1568145615258"
-      alt="X-Ray Goggles Logo"
-    >
-    
-    <h2>
-      Remix Any Page on the Web
-    </h2>
-    
-    <p>
-      X-Ray Goggles makes it easy to see and remix the code behind your favorite web pages.
-The best part: you don't need any prior coding experience! Just activate Goggles, click on a section,
-and edit. Then, share your remixes with others.
-    </p>
-    
-    
-    <ol>
-      <li>
-        <h3>
-          Open Your Bookmark Toolbar
-        </h3>
+    <div id="header">  
+      <div id="header-content">     
         <img
-          src="https://cdn.glitch.com/4be08ec8-dd6f-4a0e-88a4-0bcf147aa4e8%2Fbookmark1-mac%20os-chrome%402x.png?v=1568145728485"
-          alt="A graphic showing how to turn on the bookmarks bar"
-        />
-        <p>
-          If you're using Chrome on a Mac, look at your top menu bar, click View, and make sure Always View Bookmarks Bar is selected.
-        </p>
+          src=""
+          alt="X-Ray Goggles Logo"
+          id="header-logo"
+        >
+        <h1>X-Ray Goggles</h1>
+      </div>
+    </div>
+    <div id="content">
+      <h2>
+        Remix Any Page on the Web
+      </h2>
+
+      <p>
+        X-Ray Goggles makes it easy to see and remix the code behind your favorite web pages.
+  The best part: you don't need any prior coding experience! Just activate Goggles, click on a section,
+  and edit. Then, share your remixes with others.
+      </p>
+
+
+      <h2>
+        How to get started:
+      </h2>
       
-      </li>
+      <ol id="steps">
+        <li>
+          
+            
+          
+          <h3>
+            Open Your Bookmark Toolbar
+          </h3>
+          
+          <img
+            id="image1"
+            src="https://cdn.glitch.com/4be08ec8-dd6f-4a0e-88a4-0bcf147aa4e8%2Fbookmark1-windows-chrome%402x.png?v=1568210258262"
+            alt="A graphic showing how to turn on the bookmarks bar"
+          />
+          <p id="text1">
+            If you're using Chrome, click the options icon to the right of your URL bar, select Bookmarks, then make sure Show bookmarks bar is selected.
+          </p>
+          
+          <h3>
+            Instructions for other platforms:
+          </h3>
+          
+          <ul id="browser-os-switcher">
+            <li>
+              Windows:&nbsp;
+              <ul>
+                <li><span onclick="browserOsSwitch('windows', 'chrome')">Chrome</span></li>
+                <li><span onclick="browserOsSwitch('windows', 'firefox')">Firefox</span></li>
+                <li><span onclick="browserOsSwitch('windows', 'ie')">Internet Explorer</span></li>
+              </ul>
+            </li>
+            <li>
+              Mac:&nbsp;
+              <ul>
+                <li><span onclick="browserOsSwitch('mac', 'chrome')">Chrome</span></li>
+                <li><span onclick="browserOsSwitch('mac', 'firefox')">Firefox</span></li>
+                <li><span onclick="browserOsSwitch('mac', 'safari')">Safari</span></li>
+              </ul>
+            </li>
+            <li>
+              Other:&nbsp;
+              <ul>
+                <li><span onclick="browserOsSwitch('other', 'chrome')">Chrome</span></li>
+                <li><span onclick="browserOsSwitch('other', 'firefox')">Firefox</span></li>
+              </ul>
+            </li>
+          </ul>        
+        </li>
+
+        <li>
+          <h3>
+            Install Goggles
+          </h3>
+          <img
+            id="image2"
+            src="https://cdn.glitch.com/4be08ec8-dd6f-4a0e-88a4-0bcf147aa4e8%2Fbookmark2-mac%20os-chrome%402x.png?v=1568147214689"
+            alt="A graphic showing how to drag the bookmarklet to the booksmarks bar"
+          />
+          <p>
+            Click and drag this button to your bookmark toolbar to install X-Ray Goggles.
+          </p>
+
+          <a class="goggles-bookmark" href="javascript:(function () {var script=document.createElement('script');script.src='https://x-ray-goggles.glitch.me/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://x-ray-goggles.glitch.me');document.body.appendChild(script);}())"><span class="dragme fa fa-arrows"></span><span class="label">X-Ray Goggles</span></a>
+
+        </li>
+      </ol>
+    </div>
+    
+    <hr class="divider"/>
+    
+    <div id="footer">
+      <h3>
+        About X-Ray Goggles
+      </h3>
       
-      <li>
-        <h3>
-          Install Goggles
-        </h3>
-        <img
-          src="https://cdn.glitch.com/4be08ec8-dd6f-4a0e-88a4-0bcf147aa4e8%2Fbookmark2-mac%20os-chrome%402x.png?v=1568147214689"
-          alt="A graphic showing how to drag the bookmarklet to the booksmarks bar"
-        />
-        <p>
-          Click and drag this button to your bookmark toolbar to install X-Ray Goggles.
-        </p>
+      <p>
+        X-Ray Goggles was developed by <a href="https://www.mozilla.org">Mozilla</a>. The original version of the project that ended in 2019 included the ability to save remixes.
+      </p>
+        
+      <p>
+        This version was created by <a href="https://mouse.org/">Mouse</a> using the original Mozilla version. This version does not support saving web page remixes, but we recommend taking a screenshot of the remixed page to show your work.
+      </p>
       
-        <a class="goggles-bookmark" href="javascript:(function () {var script=document.createElement('script');script.src='https://x-ray-goggles.glitch.me/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://x-ray-goggles.glitch.me');document.body.appendChild(script);}())"><span class="dragme fa fa-arrows"></span><span class="label">X-Ray Goggles</span></a>
-      
-      </li>
-    </ol>
+      <p>
+        Mouse uses this tool in our curriculum platform <a href="https://create.mouse.org/">Mouse Create</a>. To learn more about Mouse's Web Literacy curriculum, and other curriculum visit Mouse Create!.
+      </p>
+    </div>
+   
     
     
 
@@ -65,5 +132,6 @@ and edit. Then, share your remixes with others.
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
     <script src="https://button.glitch.me/button.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
