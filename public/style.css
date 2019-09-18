@@ -12,7 +12,7 @@ ol, ul, li {
 
 #header {
   height: 90px;
-  background-color: #4b51aa;
+  background-color: #ff3333;
 }
 
 #header-content {
@@ -68,7 +68,7 @@ ol, ul, li {
 #steps > li {
   margin: 1em;
   padding: 0 0 1em 5em;
-  background-color: #f2f3ff;
+  background-color: #FDEFEA;
   border-radius: 3px;
 }
 
