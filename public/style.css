@@ -67,7 +67,7 @@ ol, ul, li {
 
 #steps > li {
   margin: 1em;
-  padding: 0 0 1em 5em;
+  padding: 0 1em 1em 5em;
   background-color: #FDEFEA;
   border-radius: 3px;
 }
