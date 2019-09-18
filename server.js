@@ -8,8 +8,6 @@ app.use(cors())
 app.use(express.static('public'))
 
 app.all('/404', (req, res) => {
-  console.log(req.originalUrl)
-  //console.log('\n * * * * * * * \n')
   res.status(404)
   res.send('404')
 })
