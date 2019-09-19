@@ -32,10 +32,12 @@ ol, ul, li {
 }
 
 #header h1 {
-  display: inline-block;
-  vertical-align: top;
-  margin: 25px;
+  /*display: inline-block;*/
+  vertical-align: middle;
+  margin: 0 25px;
+  padding: 25px;
   color: white;
+  text-align: center;
 }
 
 #content, #footer, .divider {
