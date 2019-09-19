@@ -12,7 +12,7 @@ ol, ul, li {
 
 #header {
   height: 90px;
-  background-color: #4b51aa;
+  background-color: #ff3333;
 }
 
 #header-content {
@@ -32,10 +32,12 @@ ol, ul, li {
 }
 
 #header h1 {
-  display: inline-block;
-  vertical-align: top;
-  margin: 25px;
+  /*display: inline-block;*/
+  vertical-align: middle;
+  margin: 0 25px;
+  padding: 25px;
   color: white;
+  text-align: center;
 }
 
 #content, #footer, .divider {
@@ -67,8 +69,8 @@ ol, ul, li {
 
 #steps > li {
   margin: 1em;
-  padding: 0 0 1em 5em;
-  background-color: #f2f3ff;
+  padding: 0 1em 1em 4em;
+  background-color: #FDEFEA;
   border-radius: 3px;
 }
 
