@@ -316,8 +316,9 @@
       // Rewrite the title to "...'s remix of ..."
       html = html.replace(/<title([^>]*)>/, "<title$1>" + userdata.username + "'s remix of ");
 
+      /*
       // Inject the goggles notification, script controlled
-      html = html.replace("</body", "<script data-original-url='" + data.url + "' src='https://goggles.mozilla.org/gogglesnotice.js'></script></body");
+      html = html.replace("</body", "<script data-original-url='" + data.url + "' src='public/gogglesnotice.js'></script></body");*/
 
       var payload = constructMultipartPayload([{
         "name": "path",
