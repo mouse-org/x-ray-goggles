@@ -7,6 +7,11 @@ app.use(cors())
 
 app.use(express.static('public'))
 
+app.get('/ping', (req, res) => {
+  res.status(200);
+  res.send('OK');
+})
+
 app.all('/404', (req, res) => {
   res.status(404)
   res.send('404')
