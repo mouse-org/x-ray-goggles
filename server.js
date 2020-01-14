@@ -5,6 +5,11 @@ const path = require('path')
 
 app.use(cors())
 
+app.all('*', (req, res, next) => {
+  console.log(req.url);
+  next();
+})
+
 app.use(express.static('public'))
 
 app.get('/ping', (req, res) => {
