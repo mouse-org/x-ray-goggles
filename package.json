@@ -1,19 +1,17 @@
 {
   "name": "x-ray-goggles",
   "version": "0.0.1",
-  "description": "A simple Node app built on Express, instantly up and running.",
-  "main": "server.js",
+  "description": "A tool for remixing websites",
   "scripts": {
-    "start": "node server.js"
+    "start": "serve"
   },
   "dependencies": {
-    "express": "^4.16.4",
-    "cors": "^2.8.5"
+    "serve": "^11.3.0"
   },
   "engines": {
     "node": "10.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/x-ray-goggles"
+    "url": "https://github.com/mouse-org/x-ray-goggles"
   }
 }
