@@ -1,3 +1,3 @@
 # X-Ray Goggles
 
-Based on Mozilla X-Ray Goggles, adapted by [https://mouse.org](Mouse).
+Based on Mozilla X-Ray Goggles, adapted by [Mouse](https://mouse.org).
