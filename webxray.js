@@ -186,7 +186,7 @@ var JSON = {
 };
 
 var defaultLang = "en-US",
-	defaultURI = "https://mouse-org.github.io" + "/" + defaultLang;
+	defaultURI = "http://x-ray-goggles.mouse.org" + "/" + defaultLang;
 
 var webxrayScript = document.querySelector(".webxray"),
 	baseURI = baseURI = webxrayScript.getAttribute("data-baseuri") || defaultURI,
@@ -10046,9 +10046,9 @@ var Webxray = (function() {
     baseURI: "",
     cssURL: "webxray.css",
     preferencesURL: "preferences.html",
-    easyRemixDialogURL: "https://mouse-org.github.io/" + xray.lang + "/easy-remix-dialog/index.html",
-    uprootDialogURL: "https://mouse-org.github.io/" + xray.lang + "/uproot-dialog.html",
-    helpDialogURL: "https://mouse-org.github.io/" + xray.lang + "/help.html",
+    easyRemixDialogURL: "http://x-ray-goggles.mouse.org/" + xray.lang + "/easy-remix-dialog/index.html",
+    uprootDialogURL: "http://x-ray-goggles.mouse.org/" + xray.lang + "/uproot-dialog.html",
+    helpDialogURL: "http://x-ray-goggles.mouse.org/" + xray.lang + "/help.html",
     hackpubInjectionURL: "published-hack/injector.js",
     pluginURLs: [],
     hackpubURL: "",
